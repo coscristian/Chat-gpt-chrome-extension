@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Chat GPT Extension",
+  "version": "1.0",
+  "description": "Use CHAT GPT without changing tabs",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/robot.png"
+  },
+  "icons": {
+    "128": "images/robot.png"
+  }
+}
