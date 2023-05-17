@@ -1,0 +1,19 @@
+{
+  "name": "chat-gpt-extension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coscristian/Chat-gpt-chrome-extension.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coscristian/Chat-gpt-chrome-extension/issues"
+  },
+  "homepage": "https://github.com/coscristian/Chat-gpt-chrome-extension#readme"
+}
