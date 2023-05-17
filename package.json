@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/coscristian/Chat-gpt-chrome-extension/issues"
   },
-  "homepage": "https://github.com/coscristian/Chat-gpt-chrome-extension#readme"
+  "homepage": "https://github.com/coscristian/Chat-gpt-chrome-extension#readme",
+  "dependencies": {
+    "axios": "^1.4.0"
+  }
 }
