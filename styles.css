@@ -1,0 +1,35 @@
+body {
+    width: 350px;
+    height: 300px;
+    overflow: hidden;
+    background-color: 	#02577a;
+    color: white;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+  }
+
+button {
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 7px;
+    padding: 6px;
+}
+
+#chatAns {
+    text-align: justify;
+    text-justify: inter-word;
+    color:#eeeeee;
+    font-weight: bold;
+    font-size: 15px;
+    font-style: italic;
+}
