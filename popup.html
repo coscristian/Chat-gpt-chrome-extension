@@ -10,11 +10,18 @@
     <title>Using CHAT GPT</title>
 </head>
 <body>
-    <h1>CHAT GPT - Input your question</h1>
-    <textarea id="userQuestion" name="user_input" cols="40" rows="6"></textarea>
-    <div id="chatAns"></div>
-    <button id="btn">Search</button>
-    <button id="refresh">Refresh</button>
+    <div id="logInContainer">
+        <h1>CHAT GPT- Please add your email</h1>
+        <input type="email" id="email" name="email" placeholder="Email">
+        <button id="btnEmail">Log In or Register</button>
+    </div>
+    <div id="chatContainer">
+        <h1>CHAT GPT - Input your question</h1>
+        <textarea id="userQuestion" name="user_input" cols="40" rows="6"></textarea>
+        <div id="chatAns"></div>
+        <button id="btn">Search</button>
+        <button id="refresh">Refresh</button>
+    </div>
 </body>
 
 </html>

@@ -1,5 +1,3 @@
-
-
 /**
  * Make the request to the specified apiUrl
  * @param {String} userPrompt The user message to send to the API
@@ -8,7 +6,7 @@
 async function sendUserQuestion(userPrompt) {
     const apiKey = config.SECRET_KEY;
     const apiUrl = "https://api.openai.com/v1/completions";
-  
+    
     // Make a POST request to the OpenAI API
     return fetch(apiUrl, {
       method: "POST",
@@ -34,8 +32,16 @@ async function sendUserQuestion(userPrompt) {
     var chatAnsElement = document.getElementById("chatAns");
     chatAnsElement.innerHTML = "";
   }
+
+  function logInUI() {
+    document.getElementById("chatContainer").style.display = "none";
+    document.body.style.height = "150px";
+  }
   
   function initUI(){
+      document.body.style.height = "300px";
+      document.getElementById("logInContainer").style.display = "none";
+      document.getElementById("chatContainer").style.display = "block";
       document.getElementById("userQuestion").style.display = "block";
       document.getElementById("chatAns").style.display = "none";
       document.getElementById("userQuestion").value = "";
@@ -44,15 +50,27 @@ async function sendUserQuestion(userPrompt) {
   }
   
   document.addEventListener("DOMContentLoaded", function () {
+    
     var searchBtn = document.getElementById("btn");
     var refreshBtn = document.getElementById("refresh");
+    var emailButton = document.getElementById("btnEmail");
+
+    logInUI();
+
+    emailButton.addEventListener("click", function () {
+      // Make a GET request to check if the email is already registered
+      // If it is, show a log in message
+      // If it isn't, show a sign up message and make a POST request to register the email
+      // HIde the email button and show the chat button
+      initUI();
+    });
   
-    initUI();
+    
   
     // Add click event listener to the button
     searchBtn.addEventListener("click", function () {
       textAreaElement = document.getElementById("userQuestion");
-  
+        
       // Send the user's question to the API and handle the response
       sendUserQuestion(textAreaElement.value)
         .then((response) => {
@@ -63,6 +81,7 @@ async function sendUserQuestion(userPrompt) {
           document.getElementById("userQuestion").style.display = "none";
           chatAnsElement.style.display = "block";
           searchBtn.style.display = "none";
+
           document.getElementById("refresh").style.display = "block";
   
           // Create a text node with the answer and append it to the answer element
