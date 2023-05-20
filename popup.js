@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
     event.preventDefault();
     sendUserInfo(userEmailInput.value, userNameINput.value)
       .then((data) => {
-        alert("Te has registado con Exito!!");
+        alert(userEmailInput.value + ", te has registado con Exito!!");
         initUI();
       })
       .catch((error) => {
