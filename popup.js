@@ -35,7 +35,6 @@ function RegisteredUser(message) {
 
 async function sendUserInfo(userEmail, userName) {
   const apiUrl = "https://api-chrome-extension.vercel.app/emails"; // Reemplaza con la URL de tu API
-  console.log("Enviando correo electrónico a:", userEmail);
 
   try {
     const emails = await fetch(apiUrl).then((response) => response.json());
