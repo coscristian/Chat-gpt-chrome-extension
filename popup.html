@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./popup.js"></script>
-    <script src="config.js"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Using CHAT GPT</title>
 </head>
 <body>
     <div id="logInContainer">
-        <h1>CHAT GPT- Please log In with your email</h1>
-        <form>
+        <h1>CHAT GPT</h1>
+        <form id = "formEmail" >
+            <input type="text" id="userName" name="name" placeholder="Your name" required>
             <input type="email" id="email" name="email" placeholder="Email" required>
-            <input type="submit" value="Log In">
+            <input id="btnEmail" type="submit" value="Log In">
         </form>
     </div>
     <div id="chatContainer">
