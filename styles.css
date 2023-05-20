@@ -24,7 +24,13 @@ button {
     margin-top: 7px;
     padding: 6px;
 }
+#userName{
+    margin: 5px;
+}
 
+#email{
+    margin: 5px;
+}
 #chatAns {
     text-align: justify;
     text-justify: inter-word;
@@ -33,5 +39,4 @@ button {
     font-size: 15px;
     font-style: italic;
 }
-
 
