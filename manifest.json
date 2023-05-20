@@ -3,7 +3,7 @@
   "name": "Chat GPT Extension",
   "version": "1.0",
   "description": "Use CHAT GPT without changing tabs",
-  "permissions": ["storage", "tabs", "webRequest", "nativeMessaging", "scripting", "activeTab"],
+  "permissions": [],
   "background": {
     "service_worker": "background.js"
   },
